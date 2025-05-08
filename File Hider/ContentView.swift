@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  File Hider
-//
-//  Created by Sergei Saliukov on 02/06/2024.
-//
-
 import SwiftUI
 
 struct ContentView: View {
