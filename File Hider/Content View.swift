@@ -4,11 +4,12 @@ import UniformTypeIdentifiers
 struct ContentView: View {
     @State private var isHideTargeted = false
     @State private var isUnhideTargeted = false
-    //defaults write com.apple.finder AppleShowAllFiles TRUE
+    
     var body: some View {
         HStack {
             VStack {
                 Text("Hide")
+                    .largeTitle()
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .onDrop(of: [.fileURL], isTargeted: $isHideTargeted) { providers in
@@ -22,6 +23,7 @@ struct ContentView: View {
             
             VStack {
                 Text("Unhide")
+                    .largeTitle()
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .onDrop(of: [.fileURL], isTargeted: $isUnhideTargeted) { providers in
