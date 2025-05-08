@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		F33CFCB72C0C508A001A134C /* File Hider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33CFCB62C0C508A001A134C /* File Hider.swift */; };
-		F33CFCB92C0C508A001A134C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33CFCB82C0C508A001A134C /* ContentView.swift */; };
+		F33CFCB92C0C508A001A134C /* Content View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33CFCB82C0C508A001A134C /* Content View.swift */; };
 		F33CFCBB2C0C508B001A134C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F33CFCBA2C0C508B001A134C /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F33CFCB32C0C508A001A134C /* File Hider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "File Hider.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F33CFCB62C0C508A001A134C /* File Hider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "File Hider.swift"; sourceTree = "<group>"; };
-		F33CFCB82C0C508A001A134C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F33CFCB82C0C508A001A134C /* Content View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Content View.swift"; sourceTree = "<group>"; };
 		F33CFCBA2C0C508B001A134C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F33CFCBF2C0C508B001A134C /* File Hider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "File Hider.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,7 +51,7 @@
 				F33CFCB62C0C508A001A134C /* File Hider.swift */,
 				F33CFCBF2C0C508B001A134C /* File Hider.entitlements */,
 				F33CFCBA2C0C508B001A134C /* Assets.xcassets */,
-				F33CFCB82C0C508A001A134C /* ContentView.swift */,
+				F33CFCB82C0C508A001A134C /* Content View.swift */,
 			);
 			path = "File Hider";
 			sourceTree = "<group>";
@@ -120,7 +120,7 @@
 		F33CFCAF2C0C508A001A134C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
-				F33CFCB92C0C508A001A134C /* ContentView.swift in Sources */,
+				F33CFCB92C0C508A001A134C /* Content View.swift in Sources */,
 				F33CFCB72C0C508A001A134C /* File Hider.swift in Sources */,
 			);
 		};
