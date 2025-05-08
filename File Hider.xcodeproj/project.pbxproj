@@ -10,6 +10,7 @@
 		F33CFCB72C0C508A001A134C /* File Hider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33CFCB62C0C508A001A134C /* File Hider.swift */; };
 		F33CFCB92C0C508A001A134C /* Content View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33CFCB82C0C508A001A134C /* Content View.swift */; };
 		F33CFCBB2C0C508B001A134C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F33CFCBA2C0C508B001A134C /* Assets.xcassets */; };
+		F3A0BB692DCCD4FC007B303B /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3A0BB682DCCD4FC007B303B /* ScrechKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F33CFCB02C0C508A001A134C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
+				F3A0BB692DCCD4FC007B303B /* ScrechKit in Frameworks */,
 			);
 		};
 /* End PBXFrameworksBuildPhase section */
@@ -70,6 +72,9 @@
 			buildRules = (
 			);
 			name = "File Hider";
+			packageProductDependencies = (
+				F3A0BB682DCCD4FC007B303B /* ScrechKit */,
+			);
 			productName = "File Hider";
 			productReference = F33CFCB32C0C508A001A134C /* File Hider.app */;
 			productType = "com.apple.product-type.application";
@@ -97,6 +102,9 @@
 				Base,
 			);
 			mainGroup = F33CFCAA2C0C508A001A134C;
+			packageReferences = (
+				F3A0BB672DCCD4FC007B303B /* XCRemoteSwiftPackageReference "ScrechKit" */,
+			);
 			preferredProjectObjectVersion = 90;
 			productRefGroup = F33CFCB42C0C508A001A134C /* Products */;
 			projectDirPath = "";
@@ -327,6 +335,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F3A0BB672DCCD4FC007B303B /* XCRemoteSwiftPackageReference "ScrechKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TopScrech/ScrechKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F3A0BB682DCCD4FC007B303B /* ScrechKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3A0BB672DCCD4FC007B303B /* XCRemoteSwiftPackageReference "ScrechKit" */;
+			productName = ScrechKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F33CFCAB2C0C508A001A134C /* Project object */;
 }
