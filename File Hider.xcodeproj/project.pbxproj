@@ -17,7 +17,7 @@
 		F33CFCB62C0C508A001A134C /* File Hider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "File Hider.swift"; sourceTree = "<group>"; };
 		F33CFCB82C0C508A001A134C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F33CFCBA2C0C508B001A134C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F33CFCBF2C0C508B001A134C /* File_Hider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = File_Hider.entitlements; sourceTree = "<group>"; };
+		F33CFCBF2C0C508B001A134C /* File Hider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "File Hider.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,8 +49,8 @@
 			isa = PBXGroup;
 			children = (
 				F33CFCB62C0C508A001A134C /* File Hider.swift */,
+				F33CFCBF2C0C508B001A134C /* File Hider.entitlements */,
 				F33CFCBA2C0C508B001A134C /* Assets.xcassets */,
-				F33CFCBF2C0C508B001A134C /* File_Hider.entitlements */,
 				F33CFCB82C0C508A001A134C /* ContentView.swift */,
 			);
 			path = "File Hider";
@@ -254,7 +254,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "File Hider/File_Hider.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "File Hider/File Hider.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 0;
@@ -283,7 +283,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "File Hider/File_Hider.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "File Hider/File Hider.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 0;
