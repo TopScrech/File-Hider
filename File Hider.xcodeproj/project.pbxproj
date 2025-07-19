@@ -10,6 +10,7 @@
 		F33CFCB72C0C508A001A134C /* File Hider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33CFCB62C0C508A001A134C /* File Hider.swift */; };
 		F33CFCB92C0C508A001A134C /* Content View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33CFCB82C0C508A001A134C /* Content View.swift */; };
 		F33CFCBB2C0C508B001A134C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F33CFCBA2C0C508B001A134C /* Assets.xcassets */; };
+		F351992A2E2C34FE004E0F02 /* macOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = F35199292E2C34FE004E0F02 /* macOS.plist */; };
 		F3A0BB692DCCD4FC007B303B /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3A0BB682DCCD4FC007B303B /* ScrechKit */; };
 /* End PBXBuildFile section */
 
@@ -18,8 +19,8 @@
 		F33CFCB62C0C508A001A134C /* File Hider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "File Hider.swift"; sourceTree = "<group>"; };
 		F33CFCB82C0C508A001A134C /* Content View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Content View.swift"; sourceTree = "<group>"; };
 		F33CFCBA2C0C508B001A134C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F33CFCBF2C0C508B001A134C /* File Hider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "File Hider.entitlements"; sourceTree = "<group>"; };
-		F35199282E2C34DD004E0F02 /* File-Hider-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "File-Hider-Info.plist"; sourceTree = SOURCE_ROOT; };
+		F33CFCBF2C0C508B001A134C /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		F35199292E2C34FE004E0F02 /* macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = macOS.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +52,9 @@
 		F33CFCB52C0C508A001A134C /* File Hider */ = {
 			isa = PBXGroup;
 			children = (
-				F35199282E2C34DD004E0F02 /* File-Hider-Info.plist */,
 				F33CFCB62C0C508A001A134C /* File Hider.swift */,
-				F33CFCBF2C0C508B001A134C /* File Hider.entitlements */,
+				F35199292E2C34FE004E0F02 /* macOS.plist */,
+				F33CFCBF2C0C508B001A134C /* macOS.entitlements */,
 				F33CFCBA2C0C508B001A134C /* Assets.xcassets */,
 				F33CFCB82C0C508A001A134C /* Content View.swift */,
 			);
@@ -122,6 +123,7 @@
 			isa = PBXResourcesBuildPhase;
 			files = (
 				F33CFCBB2C0C508B001A134C /* Assets.xcassets in Resources */,
+				F351992A2E2C34FE004E0F02 /* macOS.plist in Resources */,
 			);
 		};
 /* End PBXResourcesBuildPhase section */
@@ -266,7 +268,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "File Hider/File Hider.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "File Hider/macOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 0;
@@ -276,7 +278,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "File-Hider-Info.plist";
+				INFOPLIST_FILE = macOS.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "File Hider";
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
@@ -299,7 +301,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "File Hider/File Hider.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "File Hider/macOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 0;
@@ -309,7 +311,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "File-Hider-Info.plist";
+				INFOPLIST_FILE = macOS.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "File Hider";
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
