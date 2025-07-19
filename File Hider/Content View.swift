@@ -13,7 +13,7 @@ struct ContentView: View {
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .onDrop(of: [.fileURL], isTargeted: $isHideTargeted) { providers in
-                processFile(providers)
+                processFiles(providers)
             }
             .background {
                 if isHideTargeted {
@@ -27,7 +27,7 @@ struct ContentView: View {
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .onDrop(of: [.fileURL], isTargeted: $isUnhideTargeted) { providers in
-                processFile(providers, hide: false)
+                processFiles(providers, hide: false)
             }
             .background {
                 if isUnhideTargeted {
@@ -37,7 +37,7 @@ struct ContentView: View {
         }
     }
     
-    private func processFile(
+    private func processFiles(
         _ providers: [NSItemProvider],
         hide: Bool = true
     ) -> Bool {
