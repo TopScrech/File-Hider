@@ -1,5 +1,6 @@
 import SwiftUI
 import UniformTypeIdentifiers
+import OSLog
 
 struct ContentView: View {
     @State private var isHideTargeted = false
@@ -26,8 +27,8 @@ struct ContentView: View {
                     .largeTitle()
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .onDrop(of: [.fileURL], isTargeted: $isUnhideTargeted) { providers in
-                processFiles(providers, hide: false)
+            .onDrop(of: [.fileURL], isTargeted: $isUnhideTargeted) {
+                processFiles($0, hide: false)
             }
             .background {
                 if isUnhideTargeted {
@@ -37,26 +38,17 @@ struct ContentView: View {
         }
     }
     
-    private func processFiles(
-        _ providers: [NSItemProvider],
-        hide: Bool = true
-    ) -> Bool {
+    private func processFiles(_ providers: [NSItemProvider], hide: Bool = true) -> Bool {
         for provider in providers {
-            provider.loadItem(
-                forTypeIdentifier: UTType.fileURL.identifier,
-                options: nil
-            ) { item, error in
+            provider.loadItem(forTypeIdentifier: UTType.fileURL.identifier, options: nil) { item, error in
                 if let error {
-                    print("Error:", error)
+                    Logger().error("\(error)")
                     return
                 }
                 
                 guard
                     let data = item as? Data,
-                    let url = NSURL(
-                        absoluteURLWithDataRepresentation: data,
-                        relativeTo: nil
-                    ) as URL?
+                    let url = NSURL(absoluteURLWithDataRepresentation: data, relativeTo: nil) as URL?
                 else {
                     return
                 }
@@ -77,11 +69,12 @@ struct ContentView: View {
             var modifiableURL = url
             try modifiableURL.setResourceValues(resourceValues)
         } catch {
-            print("Error:", error.localizedDescription)
+            Logger().error("\(error)")
         }
     }
 }
 
 #Preview {
     ContentView()
+        .darkSchemePreferred()
 }

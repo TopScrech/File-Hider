@@ -7,20 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F33CFCB72C0C508A001A134C /* File Hider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33CFCB62C0C508A001A134C /* File Hider.swift */; };
-		F33CFCB92C0C508A001A134C /* Content View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33CFCB82C0C508A001A134C /* Content View.swift */; };
-		F33CFCBB2C0C508B001A134C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F33CFCBA2C0C508B001A134C /* Assets.xcassets */; };
 		F3A0BB692DCCD4FC007B303B /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3A0BB682DCCD4FC007B303B /* ScrechKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F33CFCB32C0C508A001A134C /* File Hider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "File Hider.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F33CFCB62C0C508A001A134C /* File Hider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "File Hider.swift"; sourceTree = "<group>"; };
-		F33CFCB82C0C508A001A134C /* Content View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Content View.swift"; sourceTree = "<group>"; };
-		F33CFCBA2C0C508B001A134C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F33CFCBF2C0C508B001A134C /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		F35199292E2C34FE004E0F02 /* macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = macOS.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		F3AC07E82F2ADF1E00115EBA /* Exceptions for "File Hider" folder in "File Hider" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				macOS.plist,
+			);
+			target = F33CFCB22C0C508A001A134C /* File Hider */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		F3AC07E32F2ADF1E00115EBA /* File Hider */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F3AC07E82F2ADF1E00115EBA /* Exceptions for "File Hider" folder in "File Hider" target */,
+			);
+			path = "File Hider";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F33CFCB02C0C508A001A134C /* Frameworks */ = {
@@ -35,7 +48,7 @@
 		F33CFCAA2C0C508A001A134C = {
 			isa = PBXGroup;
 			children = (
-				F33CFCB52C0C508A001A134C /* File Hider */,
+				F3AC07E32F2ADF1E00115EBA /* File Hider */,
 				F33CFCB42C0C508A001A134C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,18 +59,6 @@
 				F33CFCB32C0C508A001A134C /* File Hider.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		F33CFCB52C0C508A001A134C /* File Hider */ = {
-			isa = PBXGroup;
-			children = (
-				F33CFCB62C0C508A001A134C /* File Hider.swift */,
-				F35199292E2C34FE004E0F02 /* macOS.plist */,
-				F33CFCBF2C0C508B001A134C /* macOS.entitlements */,
-				F33CFCBA2C0C508B001A134C /* Assets.xcassets */,
-				F33CFCB82C0C508A001A134C /* Content View.swift */,
-			);
-			path = "File Hider";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,6 +73,9 @@
 				F33CFCB12C0C508A001A134C /* Resources */,
 			);
 			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				F3AC07E32F2ADF1E00115EBA /* File Hider */,
 			);
 			name = "File Hider";
 			packageProductDependencies = (
@@ -121,7 +125,6 @@
 		F33CFCB12C0C508A001A134C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
-				F33CFCBB2C0C508B001A134C /* Assets.xcassets in Resources */,
 			);
 		};
 /* End PBXResourcesBuildPhase section */
@@ -130,8 +133,6 @@
 		F33CFCAF2C0C508A001A134C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
-				F33CFCB92C0C508A001A134C /* Content View.swift in Sources */,
-				F33CFCB72C0C508A001A134C /* File Hider.swift in Sources */,
 			);
 		};
 /* End PBXSourcesBuildPhase section */
