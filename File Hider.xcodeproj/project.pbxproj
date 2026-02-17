@@ -11,6 +11,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F3365BDB2F44504000824B1C /* UNLICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = UNLICENSE.txt; sourceTree = "<group>"; };
 		F33CFCB32C0C508A001A134C /* File Hider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "File Hider.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -48,6 +49,7 @@
 		F33CFCAA2C0C508A001A134C = {
 			isa = PBXGroup;
 			children = (
+				F3365BDB2F44504000824B1C /* UNLICENSE.txt */,
 				F3AC07E32F2ADF1E00115EBA /* File Hider */,
 				F33CFCB42C0C508A001A134C /* Products */,
 			);
