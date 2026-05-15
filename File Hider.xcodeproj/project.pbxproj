@@ -11,6 +11,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F31B97652FB7C07E007469E7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F3365BDB2F44504000824B1C /* UNLICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = UNLICENSE.txt; sourceTree = "<group>"; };
 		F33CFCB32C0C508A001A134C /* File Hider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "File Hider.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -49,8 +50,9 @@
 		F33CFCAA2C0C508A001A134C = {
 			isa = PBXGroup;
 			children = (
-				F3365BDB2F44504000824B1C /* UNLICENSE.txt */,
+				F31B97652FB7C07E007469E7 /* README.md */,
 				F3AC07E32F2ADF1E00115EBA /* File Hider */,
+				F3365BDB2F44504000824B1C /* UNLICENSE.txt */,
 				F33CFCB42C0C508A001A134C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -358,8 +360,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/TopScrech/ScrechKit";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
