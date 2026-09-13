@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 100;
+	objectVersion = 110;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		F31B97652FB7C07E007469E7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F3365BDB2F44504000824B1C /* UNLICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = UNLICENSE.txt; sourceTree = "<group>"; };
 		F33CFCB32C0C508A001A134C /* File Hider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "File Hider.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3ED47D23057385800B6F884 /* AGENTS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = AGENTS.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -50,6 +51,7 @@
 		F33CFCAA2C0C508A001A134C = {
 			isa = PBXGroup;
 			children = (
+				F3ED47D23057385800B6F884 /* AGENTS.md */,
 				F31B97652FB7C07E007469E7 /* README.md */,
 				F3AC07E32F2ADF1E00115EBA /* File Hider */,
 				F3365BDB2F44504000824B1C /* UNLICENSE.txt */,
@@ -115,7 +117,7 @@
 			packageReferences = (
 				F3A0BB672DCCD4FC007B303B /* XCRemoteSwiftPackageReference "ScrechKit" */,
 			);
-			preferredProjectObjectVersion = 100;
+			preferredProjectObjectVersion = 110;
 			productRefGroup = F33CFCB42C0C508A001A134C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -292,7 +294,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 14;
 				MARKETING_VERSION = 0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.File-Hider";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -325,7 +327,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 14;
 				MARKETING_VERSION = 0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.File-Hider";
 				PRODUCT_NAME = "$(TARGET_NAME)";
